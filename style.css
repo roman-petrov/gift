@@ -49,6 +49,14 @@ body {
   font-size: 60px;
 }
 
+.hidden-message {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  color: red;
+  font-size: 5px;
+}
+
 a {
   text-decoration: none;
 }
