@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap");
 body {
+  font-family: "Cormorant Infant";
   margin: 0;
   overflow: hidden;
   background: -webkit-radial-gradient(
@@ -33,7 +35,7 @@ body {
 }
 
 .message {
-  background-color: white;
+  background-color: lightgreen;
   padding: 32px;
   border-radius: 8px;
   position: fixed;
@@ -46,7 +48,21 @@ body {
 }
 
 .gift-message {
-  font-size: 60px;
+  font-size: 80px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.gift-message-text {
+  font-size: 20px;
+}
+
+.gift-message a {
+  color: orange;
+}
+
+.gift-message a:hover {
+  color: royalblue;
 }
 
 .hidden-message {
