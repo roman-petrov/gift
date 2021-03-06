@@ -1,4 +1,41 @@
-.center {
+body {
+  margin: 0;
+  overflow: hidden;
+  background: -webkit-radial-gradient(
+    left bottom,
+    circle farthest-corner,
+    #e1fd3e,
+    #174709
+  );
+  background: -moz-radial-gradient(
+    left bottom,
+    circle farthest-corner,
+    #e1fd3e,
+    #174709
+  );
+  background: -ms-radial-gradient(
+    left bottom,
+    circle farthest-corner,
+    #e1fd3e,
+    #174709
+  );
+  background: -o-radial-gradient(
+    left bottom,
+    circle farthest-corner,
+    #e1fd3e,
+    #174709
+  );
+  background: radial-gradient(
+    farthest-corner circle at left bottom,
+    #e1fd3e,
+    #174709
+  );
+}
+
+.message {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
   position: fixed;
   top: 50%;
   left: 50%;
