@@ -59,6 +59,7 @@ body {
 
 .gift-message a {
   color: orange;
+  transition: 0.3s;
 }
 
 .gift-message a:hover {
