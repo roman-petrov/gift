@@ -1,17 +1,17 @@
-function hideElement() {
-  document.querySelector(".errorText").innerHTML =
-    "Так не получится, установи масштаб страницы в 100%, чтобы получить подарок! :)";
+function toggleElement(show, hide) {
+  const showElement = document.querySelector(show);
+  const hideElement = document.querySelector(hide);
+  showElement.style = "opacity: 1";
+  hideElement.style = "opacity: 0";
+}
 
-  const element = document.querySelector(".center");
-  if (!element.classList.contains("fadeOut")) {
-    element.classList.add("fadeOut");
+function protect() {
+  if (window.devicePixelRatio !== 1 && window.devicePixelRatio !== 1.5) {
+    toggleElement(".errorText", ".center");
+  } else {
+    toggleElement(".center", ".errorText");
   }
 }
 
-if (window.devicePixelRatio !== 1 && window.devicePixelRatio !== 1.5) {
-  hideElement();
-}
-
-window.addEventListener("resize", () => {
-  hideElement();
-});
+protect();
+window.addEventListener("resize", protect);

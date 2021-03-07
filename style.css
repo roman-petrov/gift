@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.6s ease-in-out;
 }
 
 .message {
@@ -92,20 +93,6 @@ a {
   text-decoration: none;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.fadeOut {
-  transition: 0.6s ease-in-out;
-  opacity: 0;
-}
-
 .errorText {
   position: fixed;
   color: red;
@@ -113,7 +100,9 @@ a {
   padding: 8px;
   font-size: 30px;
   border-radius: 4px;
-  top: 30px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
+  transition: 0.6s ease-in-out;
+  opacity: 0;
 }
