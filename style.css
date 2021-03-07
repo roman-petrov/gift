@@ -91,3 +91,29 @@ body {
 a {
   text-decoration: none;
 }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+}
+
+.errorText {
+  position: fixed;
+  color: red;
+  background: white;
+  padding: 8px;
+  font-size: 30px;
+  border-radius: 4px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
