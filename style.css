@@ -56,7 +56,7 @@ body {
 }
 
 .gift-message {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bold;
   color: lightblue;
 }
@@ -85,7 +85,7 @@ body {
 .hidden-message {
   color: white;
   font-size: 5px;
-  animation: pulse 1.5s infinite ease-in-out alternate;
+  animation: pulse 1s infinite ease-in-out alternate;
   user-select: none;
 }
 
