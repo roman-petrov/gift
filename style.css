@@ -72,10 +72,19 @@ body {
 .gift-message a:hover {
   color: royalblue;
 }
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
 
 .hidden-message {
   color: white;
   font-size: 5px;
+  animation: pulse 1.5s infinite ease-in-out alternate;
 }
 
 a {
