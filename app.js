@@ -6,7 +6,9 @@ function toggleElement(show, hide) {
 }
 
 function protect() {
-  if (window.devicePixelRatio !== 1 && window.devicePixelRatio !== 1.5) {
+  var zoom = detectZoom.zoom();
+
+  if (zoom !== 1) {
     toggleElement(".errorText", ".center");
   } else {
     toggleElement(".center", ".errorText");
